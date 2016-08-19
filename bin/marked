@@ -23,9 +23,8 @@ function help() {
     customFds: [0, 1, 2]
   };
 
-  spawn('man',
-    [__dirname + '/../man/marked.1'],
-    options);
+  var cmd = [__dirname + '/../man/marked.1']
+  spawn('man', cmd, options);
 }
 
 /**
